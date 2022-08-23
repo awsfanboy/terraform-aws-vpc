@@ -27,3 +27,17 @@ override.tf.json
 
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 # example: *tfplan*
+
+# Ignore the .idea folder which created by jetbrains IDE's
+.idea
+
+# Igmore the local backend configuration file
+*.conf
+
+# Ignore the local dev variable file
+dev.tfvars
+
+# Ignore my local .terraform.lock.hcl file. In your private repo make sure you commit the .terraform.lock.hcl file to the version controller.
+# Ref : https://www.terraform.io/language/files/dependency-lock
+.terraform.lock.hcl
+
